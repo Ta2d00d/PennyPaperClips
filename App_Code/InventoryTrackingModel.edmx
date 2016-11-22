@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InventoryTrackingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="InventoryTrackingModelStoreContainer">
+          <EntitySet Name="Customer" EntityType="InventoryTrackingModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Order" EntityType="InventoryTrackingModel.Store.Order" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderLineItem" EntityType="InventoryTrackingModel.Store.OrderLineItem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="InventoryTrackingModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StorageBin" EntityType="InventoryTrackingModel.Store.StorageBin" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StoredProduct" EntityType="InventoryTrackingModel.Store.StoredProduct" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Order_Customer" Association="InventoryTrackingModel.Store.FK_Order_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineItem_Order" Association="InventoryTrackingModel.Store.FK_OrderLineItem_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderLineItem" EntitySet="OrderLineItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineItem_Product" Association="InventoryTrackingModel.Store.FK_OrderLineItem_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="OrderLineItem" EntitySet="OrderLineItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StoredProduct_Product" Association="InventoryTrackingModel.Store.FK_StoredProduct_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="StoredProduct" EntitySet="StoredProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StoredProduct_StorageBin" Association="InventoryTrackingModel.Store.FK_StoredProduct_StorageBin">
+            <End Role="StorageBin" EntitySet="StorageBin" />
+            <End Role="StoredProduct" EntitySet="StoredProduct" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="StateCode" Type="nvarchar" MaxLength="2" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderLineItem">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="UnitPrice" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="IsHeld" Type="bit" Nullable="false" />
+          <Property Name="IsPicked" Type="bit" Nullable="false" />
+          <Property Name="IsShipped" Type="bit" Nullable="false" />
+          <Property Name="PickedQuantity" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductDescription" Type="nvarchar(max)" />
+          <Property Name="UnitPrice" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="OnHand" Type="int" Nullable="false" />
+          <Property Name="UPC" Type="nvarchar" MaxLength="20" />
+          <Property Name="ProductImageUrl" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="StorageBin">
+          <Key>
+            <PropertyRef Name="BinID" />
+          </Key>
+          <Property Name="BinID" Type="int" Nullable="false" />
+          <Property Name="BinLocation" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StoredProduct">
+          <Key>
+            <PropertyRef Name="ProductID" />
+            <PropertyRef Name="BinID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="BinID" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Order_Customer">
+          <End Role="Customer" Type="InventoryTrackingModel.Store.Customer" Multiplicity="1" />
+          <End Role="Order" Type="InventoryTrackingModel.Store.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineItem_Order">
+          <End Role="Order" Type="InventoryTrackingModel.Store.Order" Multiplicity="1" />
+          <End Role="OrderLineItem" Type="InventoryTrackingModel.Store.OrderLineItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderLineItem">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineItem_Product">
+          <End Role="Product" Type="InventoryTrackingModel.Store.Product" Multiplicity="1" />
+          <End Role="OrderLineItem" Type="InventoryTrackingModel.Store.OrderLineItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="OrderLineItem">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StoredProduct_Product">
+          <End Role="Product" Type="InventoryTrackingModel.Store.Product" Multiplicity="1" />
+          <End Role="StoredProduct" Type="InventoryTrackingModel.Store.StoredProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="StoredProduct">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StoredProduct_StorageBin">
+          <End Role="StorageBin" Type="InventoryTrackingModel.Store.StorageBin" Multiplicity="1" />
+          <End Role="StoredProduct" Type="InventoryTrackingModel.Store.StoredProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StorageBin">
+              <PropertyRef Name="BinID" />
+            </Principal>
+            <Dependent Role="StoredProduct">
+              <PropertyRef Name="BinID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InventoryTrackingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="InventoryTrackingEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Customers" EntityType="InventoryTrackingModel.Customer" />
+          <EntitySet Name="Orders" EntityType="InventoryTrackingModel.Order" />
+          <EntitySet Name="OrderLineItems" EntityType="InventoryTrackingModel.OrderLineItem" />
+          <EntitySet Name="Products" EntityType="InventoryTrackingModel.Product" />
+          <EntitySet Name="StorageBins" EntityType="InventoryTrackingModel.StorageBin" />
+          <EntitySet Name="StoredProducts" EntityType="InventoryTrackingModel.StoredProduct" />
+          <AssociationSet Name="FK_Order_Customer" Association="InventoryTrackingModel.FK_Order_Customer">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineItem_Order" Association="InventoryTrackingModel.FK_OrderLineItem_Order">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="OrderLineItem" EntitySet="OrderLineItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineItem_Product" Association="InventoryTrackingModel.FK_OrderLineItem_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="OrderLineItem" EntitySet="OrderLineItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StoredProduct_Product" Association="InventoryTrackingModel.FK_StoredProduct_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="StoredProduct" EntitySet="StoredProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StoredProduct_StorageBin" Association="InventoryTrackingModel.FK_StoredProduct_StorageBin">
+            <End Role="StorageBin" EntitySet="StorageBins" />
+            <End Role="StoredProduct" EntitySet="StoredProducts" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(InventoryTrackingModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(InventoryTrackingModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Street" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StateCode" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Orders" Relationship="InventoryTrackingModel.FK_Order_Customer" FromRole="Customer" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Customer" Relationship="InventoryTrackingModel.FK_Order_Customer" FromRole="Order" ToRole="Customer" />
+          <NavigationProperty Name="OrderLineItems" Relationship="InventoryTrackingModel.FK_OrderLineItem_Order" FromRole="Order" ToRole="OrderLineItem" />
+        </EntityType>
+        <EntityType Name="OrderLineItem">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="IsHeld" Type="Boolean" Nullable="false" />
+          <Property Name="IsPicked" Type="Boolean" Nullable="false" />
+          <Property Name="IsShipped" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="InventoryTrackingModel.FK_OrderLineItem_Order" FromRole="OrderLineItem" ToRole="Order" />
+          <NavigationProperty Name="Product" Relationship="InventoryTrackingModel.FK_OrderLineItem_Product" FromRole="OrderLineItem" ToRole="Product" />
+          <Property Type="Int32" Name="PickedQuantity" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="ProductName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="OnHand" Type="Int32" Nullable="false" />
+          <Property Name="UPC" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ProductImageUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="OrderLineItems" Relationship="InventoryTrackingModel.FK_OrderLineItem_Product" FromRole="Product" ToRole="OrderLineItem" />
+          <NavigationProperty Name="StoredProducts" Relationship="InventoryTrackingModel.FK_StoredProduct_Product" FromRole="Product" ToRole="StoredProduct" />
+        </EntityType>
+        <EntityType Name="StorageBin">
+          <Key>
+            <PropertyRef Name="BinID" />
+          </Key>
+          <Property Name="BinID" Type="Int32" Nullable="false" />
+          <Property Name="BinLocation" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="StoredProducts" Relationship="InventoryTrackingModel.FK_StoredProduct_StorageBin" FromRole="StorageBin" ToRole="StoredProduct" />
+        </EntityType>
+        <EntityType Name="StoredProduct">
+          <Key>
+            <PropertyRef Name="ProductID" />
+            <PropertyRef Name="BinID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="BinID" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="InventoryTrackingModel.FK_StoredProduct_Product" FromRole="StoredProduct" ToRole="Product" />
+          <NavigationProperty Name="StorageBin" Relationship="InventoryTrackingModel.FK_StoredProduct_StorageBin" FromRole="StoredProduct" ToRole="StorageBin" />
+        </EntityType>
+        <Association Name="FK_Order_Customer">
+          <End Role="Customer" Type="InventoryTrackingModel.Customer" Multiplicity="1" />
+          <End Role="Order" Type="InventoryTrackingModel.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineItem_Order">
+          <End Role="Order" Type="InventoryTrackingModel.Order" Multiplicity="1" />
+          <End Role="OrderLineItem" Type="InventoryTrackingModel.OrderLineItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderLineItem">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineItem_Product">
+          <End Role="Product" Type="InventoryTrackingModel.Product" Multiplicity="1" />
+          <End Role="OrderLineItem" Type="InventoryTrackingModel.OrderLineItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="OrderLineItem">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StoredProduct_Product">
+          <End Role="Product" Type="InventoryTrackingModel.Product" Multiplicity="1" />
+          <End Role="StoredProduct" Type="InventoryTrackingModel.StoredProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="StoredProduct">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StoredProduct_StorageBin">
+          <End Role="StorageBin" Type="InventoryTrackingModel.StorageBin" Multiplicity="1" />
+          <End Role="StoredProduct" Type="InventoryTrackingModel.StoredProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StorageBin">
+              <PropertyRef Name="BinID" />
+            </Principal>
+            <Dependent Role="StoredProduct">
+              <PropertyRef Name="BinID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InventoryTrackingModelStoreContainer" CdmEntityContainer="InventoryTrackingEntities">
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderLineItems">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.OrderLineItem">
+              <MappingFragment StoreEntitySet="OrderLineItem">
+                <ScalarProperty Name="PickedQuantity" ColumnName="PickedQuantity" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="IsHeld" ColumnName="IsHeld" />
+                <ScalarProperty Name="IsPicked" ColumnName="IsPicked" />
+                <ScalarProperty Name="IsShipped" ColumnName="IsShipped" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="OnHand" ColumnName="OnHand" />
+                <ScalarProperty Name="UPC" ColumnName="UPC" />
+                <ScalarProperty Name="ProductImageUrl" ColumnName="ProductImageUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StorageBins">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.StorageBin">
+              <MappingFragment StoreEntitySet="StorageBin">
+                <ScalarProperty Name="BinID" ColumnName="BinID" />
+                <ScalarProperty Name="BinLocation" ColumnName="BinLocation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StoredProducts">
+            <EntityTypeMapping TypeName="InventoryTrackingModel.StoredProduct">
+              <MappingFragment StoreEntitySet="StoredProduct">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="BinID" ColumnName="BinID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="InventoryTrackingModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="InventoryTrackingModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="InventoryTrackingModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="InventoryTrackingModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="InventoryTrackingModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="InventoryTrackingModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="InventoryTrackingModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="InventoryTrackingModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="InventoryTrackingModel.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

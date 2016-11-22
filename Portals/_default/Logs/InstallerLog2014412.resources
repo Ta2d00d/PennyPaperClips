@@ -1,0 +1,271 @@
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Creation Check
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Creation Check
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Deletion Check
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Deletion Check
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Checking IIS configuration
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Database Script DotNetNuke.Schema
+04/12/2014 16:43:21 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\DotNetNuke.Schema.SqlDataProvider
+04/12/2014 16:43:41 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\DotNetNuke.Schema.SqlDataProvider
+04/12/2014 16:43:41 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Database Script DotNetNuke.Data
+04/12/2014 16:43:41 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\DotNetNuke.Data.SqlDataProvider
+04/12/2014 16:43:45 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\DotNetNuke.Data.SqlDataProvider
+04/12/2014 16:43:45 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Membership Database Scripts
+04/12/2014 16:43:45 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallMemberRoleProvider
+04/12/2014 16:43:48 [INFO] DotNetNuke.Services.Upgrade.Upgrade End InstallMemberRoleProvider
+04/12/2014 16:43:48 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.01
+04/12/2014 16:43:48 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/12/2014 16:43:48 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.02
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.03
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.04
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/12/2014 16:43:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.05
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.06
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/12/2014 16:43:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/12/2014 16:43:52 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/12/2014 16:43:52 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/12/2014 16:43:52 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.00
+04/12/2014 16:43:52 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/12/2014 16:43:52 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.01
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.02
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/12/2014 16:43:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/12/2014 16:43:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/12/2014 16:43:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/12/2014 16:43:58 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.02.00
+04/12/2014 16:43:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/12/2014 16:43:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/12/2014 16:44:00 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/12/2014 16:44:00 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/12/2014 16:44:00 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.02.01
+04/12/2014 16:44:00 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/12/2014 16:44:00 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.1
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.1
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.2
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.2
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.3
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.3
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.4
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.4
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.5
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.5
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.6
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.6
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.0
+04/12/2014 16:44:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.0
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPages:Search Admin
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.1
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.1
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.2
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.2
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.2.0
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.2.0
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleDefinition:Module Creator
+04/12/2014 16:44:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleControl:112
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.2.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.2.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.01
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.01
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.02
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.02
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.3
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.03
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.3
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.3
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.03
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.4
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.04
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.4
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.4
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.04
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.5
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.05
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.5
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.5
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.05
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.6
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.06
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.6
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=requestPathInvalidCharacters
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.6
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.06
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.0
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.00
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.0
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.0
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.00
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.01
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.1
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.01
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.02
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=defaultFileProcessingProvider
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.2
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.02
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.2.0
+04/12/2014 16:44:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.02.00
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.0
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.0
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.02.00
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.02.01
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.02.01
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.01
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.2
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.02
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.3
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.03
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.4
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.04
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.5
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.05
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.6
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.06
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.0
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.00
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.01
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.2
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.02
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.2.0
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.02.00
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.02.01
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=requestValidationMode
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.1
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DDRMenu_02.00.03_Install.zip
+04/12/2014 16:44:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DDRMenu_02.00.03_Install.zip
+04/12/2014 16:44:09 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:09 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_CoreMessaging_07.02.01_Install.zip
+04/12/2014 16:44:09 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_CoreMessaging_07.02.01_Install.zip
+04/12/2014 16:44:10 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_DigitalAssetsManagement_07.02.01_Install.zip
+04/12/2014 16:44:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_DigitalAssetsManagement_07.02.01_Install.zip
+04/12/2014 16:44:13 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_HTML_07.02.01_Install.zip
+04/12/2014 16:44:13 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_HTML_07.02.01_Install.zip
+04/12/2014 16:44:16 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Journal_07.02.01_Install.zip
+04/12/2014 16:44:16 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_Journal_07.02.01_Install.zip
+04/12/2014 16:44:17 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_MemberDirectory_07.02.01_Install.zip
+04/12/2014 16:44:17 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_MemberDirectory_07.02.01_Install.zip
+04/12/2014 16:44:19 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_MobileManagement_07.02.01_Install.zip
+04/12/2014 16:44:19 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_MobileManagement_07.02.01_Install.zip
+04/12/2014 16:44:20 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_PreviewProfileManagement_07.02.01_Install.zip
+04/12/2014 16:44:20 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_PreviewProfileManagement_07.02.01_Install.zip
+04/12/2014 16:44:20 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/12/2014 16:44:21 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_RazorHost_07.02.01_Install.zip
+04/12/2014 16:44:21 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_RazorHost_07.02.01_Install.zip
+04/12/2014 16:44:22 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_SocialGroups_07.02.01_Install.zip
+04/12/2014 16:44:22 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_SocialGroups_07.02.01_Install.zip
+04/12/2014 16:44:22 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Taxonomy_07.02.01_Install.zip
+04/12/2014 16:44:22 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_Taxonomy_07.02.01_Install.zip
+04/12/2014 16:44:23 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Library - DNNCE_UrlManagement_07.02.01_Install.zip
+04/12/2014 16:44:23 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\DNNCE_UrlManagement_07.02.01_Install.zip
+04/12/2014 16:44:24 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Library - Telerik_07.02.00_Install.zip
+04/12/2014 16:44:24 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Module\Telerik_07.02.00_Install.zip
+04/12/2014 16:44:30 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:30 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:30 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:30 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQuery.zip
+04/12/2014 16:44:30 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\JavaScriptLibrary\jQuery.zip
+04/12/2014 16:44:31 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - Knockout.zip
+04/12/2014 16:44:31 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\JavaScriptLibrary\Knockout.zip
+04/12/2014 16:44:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - DNNMenuNavigationProvider_07.02.01_Install.zip
+04/12/2014 16:44:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Provider\DNNMenuNavigationProvider_07.02.01_Install.zip
+04/12/2014 16:44:32 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - FiftyOneClientCapabilityProvider_07.02.01_Install.zip
+04/12/2014 16:44:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Provider\FiftyOneClientCapabilityProvider_07.02.01_Install.zip
+04/12/2014 16:44:34 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:34 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:34 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:34 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=defaultProvider
+04/12/2014 16:44:35 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - RadEditorProvider_07.02.01_Install.zip
+04/12/2014 16:44:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\Provider\RadEditorProvider_07.02.01_Install.zip
+04/12/2014 16:44:37 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:37 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/12/2014 16:44:37 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQueryMigrate.zip
+04/12/2014 16:44:37 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\JavaScriptLibrary\jQueryMigrate.zip
+04/12/2014 16:44:38 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQueryUI.zip
+04/12/2014 16:44:38 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\JavaScriptLibrary\jQueryUI.zip
+04/12/2014 16:44:38 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - KnockoutMapping.zip
+04/12/2014 16:44:38 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\Install\JavaScriptLibrary\KnockoutMapping.zip
+04/12/2014 16:44:39 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Initializing Host Settings
+04/12/2014 16:44:49 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Creating Site [Capstone]
+04/12/2014 16:44:49 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start CreateUserInfo:host
+04/12/2014 16:45:42 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Create SuperUser
+04/12/2014 16:45:42 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Creating SuperUserhost
+04/12/2014 16:46:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:File Management
+04/12/2014 16:46:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:115
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:115
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:File Management
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:115
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:115
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:File Manager
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//FileManager
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:119
+04/12/2014 16:46:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:119
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:120
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:120
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:Taxonomy
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Taxonomy
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:123
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:123
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Device Detection Management
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Device Detection Management
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Device Detection Management
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:124
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:124
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:HTML Editor Manager
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:HTML Editor Manager
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:125
+04/12/2014 16:46:07 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:125

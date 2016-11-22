@@ -1,0 +1,2 @@
+2014-04-29 12:12:52,364 [capstone-VPC][Thread:8][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2014-04-29 12:13:01,085 [capstone-VPC][Thread:8][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors

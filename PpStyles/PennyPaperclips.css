@@ -1,0 +1,94 @@
+﻿.prompt {
+    float: left;
+    padding-right: .2em;
+    min-width: 9em;
+}
+#productInfo ul {
+    margin: 0;
+    padding: 0;
+}
+#productInfo li {
+    list-style-type: none;
+    clear: both;
+    padding: .1em;
+}
+#productStorage ul {
+    margin: 0;
+    padding: 0;
+}
+#productStorage li {
+    list-style-type: none;
+    clear: both;
+    padding: .1em;
+}
+#shoppingCart ul {
+    margin: 0;
+    padding: 0;
+}
+#shoppingCart li {
+    list-style-type: none;
+    clear: both;
+    padding: .1em;
+}
+#customerInfo ul {
+    margin: 0;
+    padding: 0;
+}
+#customerInfo li {
+    list-style-type: none;
+    clear: both;
+    padding: .1em;
+}
+#productInfo {
+    border: thin inset #000000;
+    margin: 4px;
+    padding: 1em;
+}
+#productStorage {
+    border: thin inset #000000;
+    margin: 4px;
+    padding: 1em;
+}
+#shoppingCart {
+    border: thin inset #000000;
+    margin: 4px;
+    padding: 1em;
+}
+#customerInfo {
+    border: thin inset #000000;
+    margin: 4px;
+    padding: 1em;
+}
+.ppDiv {
+    border: thin inset #000000;
+    margin: 4px;
+    padding: 1em;
+}
+.ppDiv ul {
+    margin: 0;
+    padding: 0;
+}
+.ppDiv li {
+    list-style-type: none;
+    clear: both;
+    padding: .1em;
+}
+.ppDiv {
+  /* fallback */
+  background-color: #FEFEFE;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#FEFEFE), to(#C09372));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #FEFEFE, #C09372);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #FEFEFE, #C09372);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #FEFEFE, #C09372);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #FEFEFE, #C09372);
+}

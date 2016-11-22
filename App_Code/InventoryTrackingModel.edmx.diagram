@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="30681654f4df4836ae23e4dfc3f4fddb" Name="Diagram1">
+        <EntityTypeShape EntityType="InventoryTrackingModel.Customer" Width="1.5" PointX="3.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InventoryTrackingModel.Order" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InventoryTrackingModel.OrderLineItem" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="InventoryTrackingModel.Product" Width="1.5" PointX="3.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="InventoryTrackingModel.StorageBin" Width="1.5" PointX="5.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InventoryTrackingModel.StoredProduct" Width="1.5" PointX="5.625" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="InventoryTrackingModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="InventoryTrackingModel.FK_OrderLineItem_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="InventoryTrackingModel.FK_OrderLineItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="InventoryTrackingModel.FK_StoredProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="InventoryTrackingModel.FK_StoredProduct_StorageBin" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

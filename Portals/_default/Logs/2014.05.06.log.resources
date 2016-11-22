@@ -1,0 +1,66 @@
+2014-05-06 08:28:28,272 [capstone-VPC][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PennyPaperClips.Shop.ShopView.DisplayCart() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 138
+   at PennyPaperClips.Shop.ShopView.OnLoad(EventArgs e) in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 41
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-05-06 08:28:28,290 [capstone-VPC][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=96&error=Object+reference+not+set+to+an+instance+of+an+object.&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PennyPaperClips.Shop.ShopView.DisplayCart() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 138
+   at PennyPaperClips.Shop.ShopView.OnLoad(EventArgs e) in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 41
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-05-06 08:56:19,971 [capstone-VPC][Thread:30][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidCastException: Unable to cast object of type 'System.Data.Entity.Infrastructure.DbQuery`1[Customer]' to type 'Customer'.
+   at Customer.GetCustomerForSession() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\App_Code\Customer.vb:line 34
+   at Order.GetOrderForSession() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\App_Code\Order.vb:line 23
+   at PennyPaperClips.Shop.ShopView.OnLoad(EventArgs e) in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 41
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-05-06 08:56:20,112 [capstone-VPC][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=96&error=An unexpected error has occurred&content=0
+System.InvalidCastException: Unable to cast object of type 'System.Data.Entity.Infrastructure.DbQuery`1[Customer]' to type 'Customer'.
+   at Customer.GetCustomerForSession() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\App_Code\Customer.vb:line 34
+   at Order.GetOrderForSession() in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\App_Code\Order.vb:line 23
+   at PennyPaperClips.Shop.ShopView.OnLoad(EventArgs e) in C:\Users\capstone\Documents\Visual Studio 2012\WebSites\Capstone\DesktopModules\PennyPaperClips\Shop\ShopView.ascx.vb:line 41
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
